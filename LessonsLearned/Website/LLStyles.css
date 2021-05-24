@@ -1,0 +1,372 @@
+body
+{
+    margin: 0; padding: 0; background-color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px; 
+    color: #333333;
+}
+/**********************************************************************/
+/* TABLES                                                             */
+/**********************************************************************/	
+table{
+ 	border-collapse: collapse; font-size:12px;  }
+
+td{vertical-align:top;}
+
+table.tableOuter, table.tableNav
+{  border:0;
+    background-color: #FFFFFF;}
+	
+table.tableOuter{
+	width: 670px;} 	
+	
+table.tableNav, table.tableContent, table.tableWork, table.tableLearn, table.tableMan{
+	width: 664px;} 	
+
+table.tableContent{
+	background-image: url(images/bg_home.jpg);
+	background-repeat: no-repeat;
+}
+table.tableWork{
+	background-image: url(images/bg_work.jpg);
+	background-repeat: no-repeat;
+}
+table.tableLearn{
+	background-image: url(images/bg_learn.jpg);
+	background-repeat: no-repeat;
+}
+table.tableMan{
+	background-image: url(images/bg_man.jpg);
+	background-repeat: no-repeat;
+}
+/**********************************************************************/
+/* TEXT                                                               */
+/**********************************************************************/	
+
+.a{font-size: 12px; color: #4B4B4B; font-weight:normal;}
+.a:link{color: #329049; text-decoration: underline; font-weight:bold;} 
+.a:visited{color:#329049; text-decoration: underline; font-weight:bold;}
+.a:hover {color: #4B4B4B; text-decoration: none; font-weight:bold;}
+.a:active {color: #329049; text-decoration: underline;font-weight:bold;}
+
+
+.txtsm {font-size: 11px; color: #4B4B4B; font-weight:normal;}
+.txtsm a:link{color: #329049; text-decoration: underline; font-weight:bold;} 
+.txtsm a:visited{color:#329049; text-decoration: underline; font-weight:bold;}
+.txtsm a:hover {color: #4B4B4B; text-decoration: none; font-weight:bold;}
+.txtsm a:active {color: #329049; text-decoration: underline;font-weight:bold;}
+	
+/**********************************************************************/
+/* MISCELLANEOUS                                                      */
+/**********************************************************************/
+
+img {
+	border-width: 0;
+}
+.centerIt{
+margin-left: auto;
+margin-right: auto;
+text-align: center;}
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/	
+
+.navigationBar 
+{
+	height: 25px;
+	width: 100%;
+	border-top: solid dimgray 1px;
+	border-bottom: solid #000 1px;
+	background-color: #408EC8;
+	color: white;
+	background-image: url(../../images/header-menu-bar.gif);		
+}
+
+.navigationMenu a:hover
+{
+	color: white;
+	border: 1px inset white;
+}
+
+.headerImage
+{
+	background-image: url(../../images/banner4.gif);
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 100%;
+	background-color:white;
+	text-align: center;
+}
+
+.navigationMenuList
+{
+	margin-top: 1px;
+	position: relative;	
+	color: white;
+}
+
+.versionLabel
+{
+	padding-top: 3px;
+	padding-left: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #FFF;	
+}
+
+.navigationLink
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: white;	
+	text-decoration: none;		
+	white-space: nowrap;
+	padding-top: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 1px;
+	cursor: pointer;
+	
+}
+
+.CalendarTitle
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: Red;
+	background: Red;
+	color: White;
+	font-weight: bold;
+	font-size: 70%;
+}
+
+.CalendarDayHeader
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: Gray;
+	color: Silver;
+	font-size: 70%;
+}
+.CalendarNextPrev
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: Red;
+	color: White;
+	font-weight: bold;
+	font-size: 70%;
+}
+
+.CalendarDay
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: white;
+	color: White;
+	font-size: 70%;
+}
+.CalendarHoliday
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background: Yellow;
+	color: white;
+	font-size: 70%;
+	font-weight: bold;
+}
+.CalendarWeekendDay
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: Silver;
+	color: Gray;
+	font-size: 70%;
+}
+.CalendarSelectedDay
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: Yellow;
+	color: White;	
+	font-size: 70%;
+}
+.CalendarToday
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: Green;
+	color: White;	
+	font-size: 70%;	
+}
+.CalendarOtherMonthDay
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background: Navy;
+	color: black;
+	font-style: italic;
+	font-size: 70%
+}
+
+.PageHeader
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: White;
+	background: Red;
+	font-size: 100%;	 
+	font-weight: bold;
+	width: 100%;
+}
+.BannerTitle
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	color: Black;
+	background: transaparent;
+	font-size: 100%;
+	font-weight: bold;
+}
+.SectionHeader
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	color: Black;
+	background: transaparent;
+	font-size: 85%;
+	font-weight: bold;
+}
+.SectionHeader2
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	color: Green;
+	background: transaparent;
+	font-size: 75%;
+	font-weight: bold;
+}
+.SectionSubHeader
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	color: Black;
+	background: transaparent;
+	font-weight: bold;
+	text-decoration: none;
+}
+.fieldLabel
+{
+	font-weight: bold;
+	font-family: Verdana, Arial, Sans-Serif;
+	
+}
+.textBox
+{
+	font-weight: normal;
+	font-family: Verdana, Arial, Sans-Serif;
+	
+}
+.fieldValueLabel
+{
+	font-weight: normal;
+	font-family: Verdana, Arial, Sans-Serif;
+	
+}
+.RuleSeparator
+{
+	height: 2px;
+	width: 95%;
+	color: Red;
+}
+.GridHeader
+{
+	color: White;
+	background-color: Red;
+	font-weight: bold;
+	font-family: Verdana, Arial, Sans-Serif;
+}
+.GridFooter
+{
+	color: White;
+	background-color: Red;
+	font-weight: bold;
+	font-family: Verdana, Arial, Sans-Serif;
+}
+.GridItem
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: White;
+}
+.GridSelectedItem
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	background-color: Gray;
+	color: white;
+}
+.GridAlternatingItem
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	background-color: gainsboro;
+	color: Black;
+}
+.Button
+{
+	width: 105px;
+	
+}
+.ErrorMessage
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	color: Red;
+	font-size: 70%;
+}
+.SuccessMessage
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	color: green;
+	font-size: 70%;
+}
+.TabStrip
+{
+	font-weight: bold;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 85%;
+}
+
+.MultiPage
+{
+	border:solid 1px #000000;
+	border-top:none;
+	padding:5px;
+}
+.SuccessLabel
+{
+	font-weight: bold;
+	color: green;
+	width: 100%;
+}
+.PageBody
+{
+	font-family: Verdana, Arial, Sans-Serif;	
+	font-size:xx-small;
+}
+.popupLink { COLOR: red; outline: none }
+.popup 
+{ 
+	POSITION: absolute; 
+	VISIBILITY: hidden; 
+	BACKGROUND-COLOR: yellow; 
+	width: 200; 
+	BORDER-LEFT: 1px solid black; 
+	BORDER-TOP: 1px solid black; 
+	BORDER-BOTTOM: 3px solid black; 
+	BORDER-RIGHT: 3px solid black; 
+	PADDING: 3px; 
+	z-index: 10 
+}
+.resdiv 
+{ 
+	height:100px;
+	width:100px;
+	position:absolute;
+	z-index:999;
+	border-right: 2px outset #7F9DB9;
+	border-bottom: 2px outset #7F9DB9;
+	border-top: 1px solid #7F9DB9;
+	border-left: 1px solid #7F9DB9;
+}
+.frmcls
+{ 
+	position:absolute;
+	background-color: Lime;
+	z-index:8;
+}

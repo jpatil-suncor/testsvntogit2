@@ -1,0 +1,375 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0E10392-0B6A-4C6A-8565-769A423E7982}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Website</RootNamespace>
+    <AssemblyName>Website</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Documentum.Interop.DFC, Version=5.3.0.316, Culture=neutral, PublicKeyToken=d8533ca61944ee9d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Documentum.Interop.DFC.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Fluent.MultiLineTextBoxValidator, Version=1.0.1504.28064, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Fluent.MultiLineTextBoxValidator.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.DFCLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Interop.DFCLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=1.0.2931.18465, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces, Version=1.0.2931.18464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="microsoft.web.ui.webcontrols, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\microsoft.web.ui.webcontrols.dll</HintPath>
+    </Reference>
+    <Reference Include="PetroCanada.CorpExec.Security, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\PetroCanada.CorpExec.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="PetroCanada.CorpExec.WebControls, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\PetroCanada.CorpExec.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="ExcelInput.aspx" />
+    <Content Include="GenericError.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\3Rs.jpg" />
+    <Content Include="images\3Rs_sm.jpg" />
+    <Content Include="images\banner4.gif" />
+    <Content Include="images\bg_home.jpg" />
+    <Content Include="images\bg_learn.jpg" />
+    <Content Include="images\bg_work.jpg" />
+    <Content Include="images\bullet.gif" />
+    <Content Include="images\buttNavOff_02.gif" />
+    <Content Include="images\buttNavOff_03.gif" />
+    <Content Include="images\buttNavOff_04.gif" />
+    <Content Include="images\buttNavOff_05.gif" />
+    <Content Include="images\buttNavOff_06.gif" />
+    <Content Include="images\buttNavOff_07.gif" />
+    <Content Include="images\buttNavOn_02.gif" />
+    <Content Include="images\buttNavOn_03.gif" />
+    <Content Include="images\buttNavOn_04.gif" />
+    <Content Include="images\buttNavOn_05.gif" />
+    <Content Include="images\buttNavOn_06.gif" />
+    <Content Include="images\buttNavOn_07.gif" />
+    <Content Include="images\central_processing.bmp.jpg" />
+    <Content Include="images\hdr_contact.jpg" />
+    <Content Include="images\hdr_excel.jpg" />
+    <Content Include="images\hdr_input.jpg" />
+    <Content Include="images\hdr_learnMore.jpg" />
+    <Content Include="images\hdr_lessLearn.jpg" />
+    <Content Include="images\hdr_man.jpg" />
+    <Content Include="images\hdr_search.jpg" />
+    <Content Include="images\hdr_worksp.jpg" />
+    <Content Include="images\header_menu_bar.gif" />
+    <Content Include="images\info.gif" />
+    <Content Include="images\input.JPG" />
+    <Content Include="images\input_2.JPG" />
+    <Content Include="images\learnMore.jpg" />
+    <Content Include="images\LessonsLearnedSearch.gif" />
+    <Content Include="images\ll_whole_pic.JPG" />
+    <Content Include="images\output.JPG" />
+    <Content Include="images\progressSearch.gif" />
+    <Content Include="images\right_arrow.JPG" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="Input.aspx" />
+    <Content Include="JavaScripts\dFilter.js" />
+    <Content Include="JavaScripts\dynamic.js" />
+    <Content Include="JavaScripts\imgSwap.js" />
+    <Content Include="JavaScripts\LLscript.js" />
+    <Content Include="JavaScripts\popup.js" />
+    <Content Include="JavaScripts\utility.js" />
+    <Content Include="Learn.aspx" />
+    <Content Include="LLStyles.css" />
+    <None Include="Documents\Lessons Corporate Template FINALWeb Version.xls" />
+    <None Include="Documents\LLHomePgOverview.ppt" />
+    <None Include="Documents\LLNew User Orientation.ppt" />
+    <None Include="Documents\LLWorkshopFinalKit.ppt" />
+    <None Include="Documents\OSP LL FINAL MS EXCEL WORKBOOK .xls" />
+    <None Include="Documents\TLM Moment LL2.0.ppt" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\EAuthWS\EnterpriseAuthenticationWebService.disco" />
+    <None Include="Web References\EAuthWS\EnterpriseAuthenticationWebService.wsdl" />
+    <None Include="Web References\EAuthWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Man.aspx" />
+    <Content Include="ProcessingBulkSearch.aspx" />
+    <Content Include="ProcessingPage.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Workshop.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Labels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Labels.fr.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labels.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelInput.aspx.cs">
+      <DependentUpon>ExcelInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExcelInput.aspx.designer.cs">
+      <DependentUpon>ExcelInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileNamingUtility.cs" />
+    <Compile Include="GenericError.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>GenericError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenericError.aspx.designer.cs">
+      <DependentUpon>GenericError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Input.aspx.cs">
+      <DependentUpon>Input.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Input.aspx.designer.cs">
+      <DependentUpon>Input.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Learn.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Learn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Learn.aspx.designer.cs">
+      <DependentUpon>Learn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LLWebPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Man.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Man.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Man.aspx.designer.cs">
+      <DependentUpon>Man.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessingBulkSearch.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ProcessingBulkSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessingBulkSearch.aspx.designer.cs">
+      <DependentUpon>ProcessingBulkSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessingPage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ProcessingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessingPage.aspx.designer.cs">
+      <DependentUpon>ProcessingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityWebPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web References\EAuthWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Workshop.aspx.cs">
+      <DependentUpon>Workshop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Workshop.aspx.designer.cs">
+      <DependentUpon>Workshop.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://pcaw2s1/EAuthWS/EnterpriseAuthenticationWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EAuthWS\</RelPath>
+      <UpdateFromURL>http://pcaw2s1/EAuthWS/EnterpriseAuthenticationWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Website_pcaw2s1_EnterpriseAuthenticationWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Backend\Backend.csproj">
+      <Project>{DB24476A-8773-4A1E-A524-4686199570CF}</Project>
+      <Name>Backend</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Labels.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Labels.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Labels.fr.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Labels.fr.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Input.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Input.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Search.aspx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Search.aspx.fr.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="images\bg_home_osp.jpg" />
+    <Content Include="images\bg_learn_osp.jpg" />
+    <Content Include="images\bg_man.jpg" />
+    <Content Include="images\bg_man_osp.jpg" />
+    <Content Include="images\bg_work_osp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2244</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/LessonsLearned</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

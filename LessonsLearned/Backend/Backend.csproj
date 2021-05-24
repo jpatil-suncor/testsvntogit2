@@ -1,0 +1,223 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB24476A-8773-4A1E-A524-4686199570CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Backend</RootNamespace>
+    <AssemblyName>Backend</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Documentum.Interop.DFC, Version=5.3.0.316, Culture=neutral, PublicKeyToken=d8533ca61944ee9d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Documentum.Interop.DFC.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.Bpm, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.Bpm.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.CI, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.CI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.Collaboration, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.Collaboration.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.Core, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.Shared, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Runtime, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.Bpm, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.Bpm.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.CI, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.CI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.Collaboration, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.Collaboration.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.Core, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.Search, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=1.0.2931.18465, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces, Version=1.0.2931.18464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="PetroCanada.CorpExec.DataAccess, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\PetroCanada.CorpExec.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PetroCanada.CorpExec.Documentum, Version=1.0.2671.28018, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\PetroCanada.CorpExec.Documentum.dll</HintPath>
+    </Reference>
+    <Reference Include="PetroCanada.CorpSoln.Data.Dctm, Version=6.5.1.1005, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\PetroCanada.CorpSoln.Data.Dctm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\FinalLesson.cs" />
+    <Compile Include="Docuemntum\ProactDocumentum.cs" />
+    <Compile Include="ExportUtility.cs" />
+    <Compile Include="Maintenance\Attachment.cs" />
+    <Compile Include="Maintenance\BusinessUnit.cs" />
+    <Compile Include="Maintenance\Category.cs" />
+    <Compile Include="Maintenance\Discipline.cs" />
+    <Compile Include="Business\PotentialLesson.cs" />
+    <Compile Include="Maintenance\FinancialImpact.cs" />
+    <Compile Include="Maintenance\Frequency.cs" />
+    <Compile Include="Maintenance\Impact.cs" />
+    <Compile Include="Maintenance\Project.cs" />
+    <Compile Include="Maintenance\SBU.cs" />
+    <Compile Include="Maintenance\SubjectMatter.cs" />
+    <Compile Include="Maintenance\Stages.cs" />
+    <Compile Include="DataAccess\DataAccessConnection.cs" />
+    <Compile Include="DataAccess\DataAccessUtil.cs" />
+    <Compile Include="DataAccess\LLCustomDataAdapter.cs" />
+    <Compile Include="LLBusinessObjectBase.cs" />
+    <Compile Include="LLException.cs" />
+    <Compile Include="Mailer.cs" />
+    <Compile Include="Maintenance\Type.cs" />
+    <Compile Include="Maintenance\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\BrowserExportType.cs" />
+    <Compile Include="Reporting\BulkSearch.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BulkSearch.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\BulkSearchReportUtility.cs" />
+    <Compile Include="Reporting\LessonLearned.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LessonLearned.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\LessonLearnedUtility.cs" />
+    <Compile Include="Reporting\LLPotential.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LLPotential.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\LLPotentialUtility.cs" />
+    <Compile Include="Reporting\ReportUtilityBase.cs" />
+    <Compile Include="Reporting\TypedDataSets\BulkSearch.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BulkSearch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\TypedDataSets\SysDate.cs">
+      <DependentUpon>SysDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\TypedDataSets\SysDate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SysDate.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reporting\BulkSearch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BulkSearch.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\LessonLearned.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LessonLearned.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\LLPotential.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LLPotential.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reporting\TypedDataSets\BulkSearch.xsc">
+      <DependentUpon>BulkSearch.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\TypedDataSets\BulkSearch.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BulkSearch.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\TypedDataSets\BulkSearch.xss">
+      <DependentUpon>BulkSearch.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\TypedDataSets\SysDate.xsc">
+      <DependentUpon>SysDate.xsd</DependentUpon>
+    </None>
+    <None Include="Reporting\TypedDataSets\SysDate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SysDate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reporting\TypedDataSets\SysDate.xss">
+      <DependentUpon>SysDate.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
